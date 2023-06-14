@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomePageComponent } from './component/home-page/home-page.component';
+import { SingleProduitComponent } from './component/single-produit/single-produit.component';
+import { ListeArticleComponent } from './liste-article/liste-article.component';
 
 const routes: Routes = [
-  {
-    path: '', component: HomePageComponent
-  }
+  { path: 'produits/:id', component: SingleProduitComponent},
+  { path: 'produits', component: ListeArticleComponent },
 ];
 
 @NgModule({
