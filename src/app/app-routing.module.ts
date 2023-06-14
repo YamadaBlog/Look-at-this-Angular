@@ -1,11 +1,19 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { SingleProduitComponent } from './component/single-produit/single-produit.component';
-import { ListeArticleComponent } from './liste-article/liste-article.component';
+import { BossComponent } from './component/boss/boss.component';
 
 const routes: Routes = [
-  { path: 'produits/:id', component: SingleProduitComponent},
-  { path: 'produits', component: ListeArticleComponent },
+  {
+  path:'',
+  component: BossComponent,
+  children : [
+    {
+    path: 'products',
+    loadChildren:() => import('./component/boss/boss.module').then(m => m.BOSSModule)
+    }
+  ]
+  }
+
 ];
 
 @NgModule({

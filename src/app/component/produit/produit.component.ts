@@ -18,7 +18,7 @@ export class ProduitComponent {
 
   onViewProduitComp() {
     console.log(this.productModelvariable)
-    this.router.navigateByUrl(`/produits/${this.productModelvariable.id}`);
+    this.router.navigateByUrl(`/products/detail/${this.productModelvariable.id}`);
     console.log("hey it works")
   }
 }

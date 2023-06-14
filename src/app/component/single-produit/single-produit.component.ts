@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Router} from "@angular/router";
 import { ActivatedRoute} from '@angular/router'
-import { service } from 'src/app/services-composant/services-data';
+import { service } from 'src/app/services/services-data';
 import { productsModel } from 'src/app/model/model';
 
 @Component({
@@ -22,6 +22,6 @@ export class SingleProduitComponent implements OnInit {
 
   // return directly to skill page
   onBack() {
-    this.router.navigate(['/produits']);
+    this.router.navigate(['/products']);
   }
 }

@@ -6,32 +6,32 @@ import { productsModel } from '../model/model';
   })
 
 export class service {
-    MonTableau: productsModel[] = [
-      {
-        id: 1,
-        nom : '1',
-        contain : 'Comp1',
-        text : 'Cliquer pour en apprendre plus',
-        image : '../../../assets/Image/angular.png',
-        lien :''
-      },
-      {
-        id: 2,
-        nom : '2',
-        contain : 'Comp2',
-        text : 'Cliquer pour en apprendre plus',
-        image : '../../../assets/Image/boostsrap.jpg',
-        lien :''
-      },
-      {
-        id: 3,
-        nom : '3',
-        contain : 'comp3',
-        text : 'Cliquer pour en apprendre plus',
-        image : '../../../assets/Image/react.png',
-        lien :''
-      }
-    ]
+  MonTableau: productsModel[] = [
+    {
+      id: 1,
+      nom : 'King des vins',
+      contain : 'Familty juice',
+      text : 'Cliquer pour en apprendre plus',
+      image : '../../../assets/Image/vin1.jpg',
+      lien :''
+    },
+    {
+      id: 2,
+      nom : 'Juicy Juicy',
+      contain : 'Bordeaux',
+      text : 'Cliquer pour en apprendre plus',
+      image : '../../../assets/Image/vin2.jpg',
+      lien :''
+    },
+    {
+      id: 3,
+      nom : 'Wow à acheter',
+      contain : 'Vin de qualité supérieur de bourgogne',
+      text : 'Cliquer pour en apprendre plus',
+      image : '../../../assets/Image/vin3.jpg',
+      lien :''
+    }
+  ]
 
 /** Retrouver dans face snap list  permet de recuperer le tableau d'élément facesnap*/
 getAllArticleSnaps(): productsModel[] {
