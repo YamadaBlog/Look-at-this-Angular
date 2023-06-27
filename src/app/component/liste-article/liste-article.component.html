@@ -1,0 +1,5 @@
+<div class="page">
+    <div class="element" *ngFor="let element of produits">
+        <app-produit [image]="element.image" [title]="element.nom" [contain]="element.contain" [productModelvariable]="element"></app-produit>
+    </div>
+</div>
