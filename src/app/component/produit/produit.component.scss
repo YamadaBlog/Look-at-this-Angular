@@ -11,6 +11,11 @@
     padding: 10px;
   }
 
+.card-body{
+  display: flex;
+  flex-direction: column;
+}
+
   .btn {
     position: relative;
     display: inline-block;
